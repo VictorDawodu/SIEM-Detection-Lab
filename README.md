@@ -7,7 +7,7 @@ rules against observed adversary behaviour.
 ## Target detection coverage
 | ATT&CK ID | Technique | Platform | Status |
 |-----------|-----------|----------|--------|
-| T1110.001 | Brute Force: Password Guessing | Linux | Not started |
+| T1110.001 | Brute Force: Password Guessing | Linux | Detected |
 | T1078 | Valid Accounts | Linux | Not started |
 | T1105 | Ingress Tool Transfer | Linux | Not started |
 | T1059.001 | PowerShell | Windows | Not started |
