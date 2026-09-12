@@ -1,0 +1,81 @@
+# Wazuh installation artifacts — contain generated credentials
+wazuh-install-files/
+wazuh-install-files.tar
+wazuh-install.sh
+*passwords.txt
+*password*.txt
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+certs/
+
+# Raw log exports — may contain internal hostnames, usernames, IPs
+*.log
+alerts.json
+archives.json
+exports/
+
+# Honeypot raw captures — review and redact before publishing anything
+cowrie.json
+cowrie/var/
+downloads/
+
+# Environment and secrets
+.env
+.env.*
+secrets.yml
+config.local.*
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp# Wazuh installation artifacts — contain generated credentials
+wazuh-install-files/
+wazuh-install-files.tar
+wazuh-install.sh
+*passwords.txt
+*password*.txt
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+certs/
+
+# Raw log exports — may contain internal hostnames, usernames, IPs
+*.log
+alerts.json
+archives.json
+exports/
+
+# Honeypot raw captures — review and redact before publishing anything
+cowrie.json
+cowrie/var/
+downloads/
+
+# Environment and secrets
+.env
+.env.*
+secrets.yml
+config.local.*
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
