@@ -1,0 +1,40 @@
+<!--
+  Custom Wazuh rules for this lab.
+
+  Deploy to:  /var/ossec/etc/rules/local_rules.xml
+  Test with:  /var/ossec/bin/wazuh-logtest
+  Apply with: sudo systemctl restart wazuh-manager
+
+  Custom rule IDs must be in the 100000-199999 range. IDs below that are
+  reserved for the default ruleset and will be overwritten on upgrade.
+
+  Levels used here:
+    0      Ignored / suppressed (used for tuning out false positives)
+    3-5    Informational, atomic events
+    7-9    Noteworthy, worth reviewing
+    10-12  Actionable, correlation or high-confidence single event
+    13+    Critical
+-->
+
+<group name="local,custom,">
+
+  <!--
+    EXAMPLE — not yet active. Uncomment and adapt once Cowrie is shipping
+    logs and you have confirmed the decoder field names with wazuh-logtest.
+
+    Detects an attacker attempting to pull a payload into the honeypot after
+    a simulated successful login. Maps to T1105 (Ingress Tool Transfer).
+  -->
+  <!--
+  <rule id="100200" level="10">
+    <if_sid>100100</if_sid>
+    <field name="eventid">cowrie.command.input</field>
+    <match>wget|curl|tftp</match>
+    <description>Honeypot: attacker attempted payload download</description>
+    <mitre>
+      <id>T1105</id>
+    </mitre>
+  </rule>
+  -->
+
+</group>
