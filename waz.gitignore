@@ -1,5 +1,0 @@
-*.tar
-*passwords.txt
-*.key
-*.pem
-wazuh-install-files/
